@@ -8,11 +8,13 @@ public class Product {
     
     String name;
     int price ;
+    int weight;
     static int count=0;
-   public Product(String newname , int newprice){
+   public Product(int newweight ,String newname , int newprice ){
         
        name=newname;
        price=newprice;
+       weight=newweight;
        count++;
        
        
@@ -20,6 +22,20 @@ public class Product {
 //      System.out.println("Price"+this.price);
        
    } 
+   
+   public int getweight(){
+       
+       return weight;
+       
+   }
+   
+   
+   
+   public  void setweight(int weight){
+       
+        this.weight=weight;
+       
+   }
    
    public String getname(){
        return name;
@@ -55,17 +71,17 @@ public class Product {
     
     
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
         
         
         
-        Product p = new Product("montage", 2000);
-        System.out.println(count);
-
-         p.setame("mahmoud");
-         p.setprice(10000);
-        System.out.println("name "+p.getname()+ " , Price " +p.getprice());
-        System.out.println("Count: " + Product.count);
+//        Product p = new Product("montage", 2000);
+//        System.out.println(count);
+//
+//         p.setame("mahmoud");
+//         p.setprice(10000);
+//        System.out.println("name "+p.getname()+ " , Price " +p.getprice());
+//        System.out.println("Count: " + Product.count);
         
-  }
+//  }
 }
